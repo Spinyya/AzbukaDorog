@@ -24,6 +24,7 @@ class HomePage extends StatelessWidget {
         ),),
         centerTitle: true,
         backgroundColor: primaryColor,
+
       ),
       body: Container(color: backgroundColor,),
       backgroundColor: backgroundColor,
