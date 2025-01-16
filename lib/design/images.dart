@@ -1,3 +1,3 @@
 import 'package:flutter_svg/flutter_svg.dart';
 
-final SvgPicture mainImages = SvgPicture.asset('assets/images/exitstr.svg');
+final SvgPicture exitIm = SvgPicture.asset('assets/images/exitstr.svg');
