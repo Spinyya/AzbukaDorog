@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Азбука Дорог',
       initialRoute: '/',
       routes: {
-        '/': (context) => HomePage(), // Главная страница
-        '/second': (context) => Lessonpage(), // Вторая страница
+        '/': (context) => const HomePage(), // Главная страница
+        '/second': (context) => const Lessonpage(), // Вторая страница
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

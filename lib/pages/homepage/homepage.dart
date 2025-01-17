@@ -1,6 +1,9 @@
 
+import 'dart:js_interop';
+import 'package:azbukadorog/main.dart';
 import 'package:azbukadorog/design/colors.dart';
 import 'package:azbukadorog/pages/homepage/button.dart';
+import 'package:azbukadorog/pages/lessonpage/lessonpage.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,7 +17,7 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _updateButton() {
-    return button(title: 'Начать обучение', onTap:() {}, routeName: '/',);
+    return button(title: 'Начать обучение');
   }
   Widget _text() {
     return Scaffold(
