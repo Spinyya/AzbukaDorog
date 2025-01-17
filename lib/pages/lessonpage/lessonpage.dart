@@ -10,7 +10,7 @@ class Lessonpage extends StatelessWidget {
     return Stack(children: <Widget>[_text(), Align(alignment: Alignment.center)],);
 
   }
-  
+
   Widget _text() {
     return Scaffold(
       appBar: AppBar(
