@@ -7,7 +7,7 @@ class Lessonpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: <Widget>[_text(), Align(alignment: Alignment.center)],);
+    return Stack(children: <Widget>[_text(), Align(alignment: Alignment.center , child: _updateButton())],);
 
   }
 
@@ -28,3 +28,6 @@ class Lessonpage extends StatelessWidget {
   }
 }
 
+Widget _updateButton() {
+  return button(title: 'Начать обучение');
+}
