@@ -15,9 +15,7 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _updateButton() {
-    return SafeArea(
-        child: button(title: 'Начать обучение'),
-    ) ;
+    return button(title: 'Начать обучение');
   }
   Widget _text() {
     return Scaffold(
