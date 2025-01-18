@@ -8,14 +8,12 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double width = MediaQuery.of(context).size.width;
-    final double height = MediaQuery.of(context).size.height;
     return Stack(children: <Widget>[_text(), Align(alignment: Alignment.bottomCenter , child: _updateButton())],);
 
   }
 
   Widget _updateButton() {
-    return button(title: 'Начать обучение');
+    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 100), child:button(title: 'Начать обучение')) ) ;
   }
   Widget _text() {
     return Scaffold(

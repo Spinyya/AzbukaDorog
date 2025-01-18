@@ -20,12 +20,11 @@ class _buttonState extends State<button> {
           minimumSize: const Size(300, 60),
           maximumSize: const Size.fromHeight(60),
           elevation: 0,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         ),
 
         child: Text(widget.title,style: const TextStyle(
           color: textColor,
-
 
         ),),);
 
