@@ -22,7 +22,10 @@ class Lessonpage extends StatelessWidget {
         backgroundColor: primaryColor,
 
       ),
-      body: Container(color: backgroundColor,),
+      body: Container(color: backgroundColor,
+        child: null,
+      ),
+
       backgroundColor: backgroundColor,
     );
   }

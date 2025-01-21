@@ -1,7 +1,6 @@
 import 'package:azbukadorog/design/colors.dart';
 import 'package:azbukadorog/pages/homepage/button.dart';
 import 'package:flutter/material.dart';
-import 'package:azbukadorog/main.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
