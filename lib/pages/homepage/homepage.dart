@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _updateButton() {
-    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 100, left: 16, right: 16), child:button(title: 'Начать Обучение')) ) ;
+    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 100, left: 16, right: 16), child:button(title: 'Начать Обучение'),),) ;
   }
   Widget _text() {
     return Scaffold(
