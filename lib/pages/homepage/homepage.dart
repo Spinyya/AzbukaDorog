@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
         ),),
         centerTitle: true,
         backgroundColor: primaryColor,
+        automaticallyImplyLeading: false,
 
       ),
       body: Container(color: backgroundColor,),
