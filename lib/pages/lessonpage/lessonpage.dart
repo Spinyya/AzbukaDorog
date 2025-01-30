@@ -1,4 +1,4 @@
-import 'package:azbukadorog/design/images.dart';
+import 'package:azbukadorog/pages/lessonpage/button.dart';
 import 'package:flutter/material.dart';
 import '../../design/colors.dart';
 
@@ -7,26 +7,23 @@ class Lessonpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: <Widget>[_text(context)],);
+    return Stack(children: <Widget>[_text(context), Align(alignment: Alignment.bottomCenter , child: _updateButton())] );
 
   }
-
+  Widget _updateButton() {
+    return exitbut();
+  }
   Widget _text(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Азбука Дорог', style: TextStyle(
-          color: textColor,
-        ),),
-
-        centerTitle: true,
-        backgroundColor: primaryColor,
-
-      ),
-      body: Container(color: backgroundColor,
-        child: null,
-      ),
-
-      backgroundColor: backgroundColor,
+      body:
+      Stack( children: <Widget>[
+        Scaffold(
+          backgroundColor: Colors.transparent,
+          body: Container(decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fon (2).png'), fit: BoxFit.cover,),),
+          ),
+        ),
+        ],
+      )
     );
   }
 }
