@@ -15,8 +15,8 @@ class _buttonState extends State<exitbut> {
     return ElevatedButton(
       onPressed: () {Navigator.pushNamed(context, '/');},
       style: ElevatedButton.styleFrom(
-        backgroundColor: primaryColor,
         minimumSize: const Size(80, 80),
+        backgroundColor: Colors.transparent,
         maximumSize: const Size(80, 80),
         elevation: 0,
       ),

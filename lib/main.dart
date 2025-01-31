@@ -1,3 +1,4 @@
+import 'package:azbukadorog/pages/camerapage/camerapage.dart';
 import 'package:flutter/material.dart';
 import 'pages/homepage/homepage.dart';
 import 'pages/lessonpage/lessonpage.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(), // Главная страница
         '/second': (context) => const Lessonpage(), // Вторая страница
+        '/cam': (context) => const CameraApp(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
