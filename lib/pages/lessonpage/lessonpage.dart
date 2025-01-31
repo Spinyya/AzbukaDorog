@@ -11,7 +11,7 @@ class Lessonpage extends StatelessWidget {
 
   }
   Widget _updateButton() {
-    return exitbut();
+    return SafeArea(child: Padding(padding: EdgeInsets.only(top: 10), child: exitbut(),));
   }
   Widget _text(BuildContext context) {
     return Scaffold(

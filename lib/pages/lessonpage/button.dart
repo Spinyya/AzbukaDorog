@@ -19,6 +19,7 @@ class _buttonState extends State<exitbut> {
         backgroundColor: Colors.transparent,
         maximumSize: const Size(80, 80),
         elevation: 0,
+
       ),
 
       child: exitIm,
