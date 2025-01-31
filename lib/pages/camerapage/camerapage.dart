@@ -27,16 +27,18 @@ class TakePictureScreenState extends State<TakePictureScreen> {
       widget.camera,
       // Define the resolution to use.
       ResolutionPreset.medium,
+      
     );
 
     // Next, initialize the controller. This returns a Future.
     _initializeControllerFuture = _controller.initialize();
+    
   }
 
   @override
   void dispose() {
     // Dispose of the controller when the widget is disposed.
-    _controller.dispose();
+    _controller.initialize();
     super.dispose();
   }
 
@@ -44,15 +46,17 @@ class TakePictureScreenState extends State<TakePictureScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Сделайте фото')),
+      
       // You must wait until the controller is initialized before displaying the
       // camera preview. Use a FutureBuilder to display a loading spinner until the
       // controller has finished initializing.
       body: FutureBuilder<void>(
         future: _initializeControllerFuture,
         builder: (context, snapshot) {
+          
           if (snapshot.connectionState == ConnectionState.done) {
             // If the Future is complete, display the preview.
-            return CameraPreview(_controller);
+            return SafeArea(child: Padding(padding: EdgeInsets.only(left: 20, right: 20), child: RotationTransition(turns: AlwaysStoppedAnimation(90/360), child: CameraPreview(_controller))));
           } else {
             // Otherwise, display a loading indicator.
             return const Center(child: CircularProgressIndicator());
