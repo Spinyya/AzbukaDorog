@@ -109,7 +109,6 @@ class DisplayPictureScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     var result = loadModel(imagePath);
-    print(result);
     return Scaffold(
       appBar: AppBar(title: const Text('Display the Picture')),
       // The image is stored as a file on the device. Use the `Image.file`

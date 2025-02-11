@@ -14,19 +14,24 @@ class Lessonpage extends StatelessWidget {
     return SafeArea(child: Padding(padding: EdgeInsets.only(top: 10), child: exitbut(),));
   }
   Widget _text(BuildContext context) {
-    return Scaffold(
-        body:
-        Stack(children: <Widget>[
-          Scaffold(
-            backgroundColor: Colors.transparent,
-            body: Container(decoration: BoxDecoration(image: DecorationImage(
-                image: AssetImage('assets/images/fon (2).png'),
-                fit: BoxFit.fill),
-            )
-            ),
-          ),
-        ],
-        )
+    return ListView( padding: const EdgeInsets.all(0),
+      children: <Widget>[
+        Container(
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fon (2).png'), fit: BoxFit.fill)),
+
+        ),
+        Container(
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fon (2).png'), fit: BoxFit.fill)),
+
+        ),
+        Container(
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fon (2).png'), fit: BoxFit.fill)),
+
+        ),
+
+
+
+      ],
     );
   }
   Widget _buttontask(BuildContext context) {
