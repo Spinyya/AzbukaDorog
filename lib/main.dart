@@ -17,7 +17,7 @@ Future<void> main() async {
     routes: {
       '/': (context) => const HomePage(), // Главная страница
       '/second': (context) => const Lessonpage(), // Вторая страница
-      '/cam': (context) => TakePictureScreen(camera: firstcamera),
+      '/camx': (context) => TakePictureScreen(camera: firstcamera),
     },
     debugShowCheckedModeBanner: false,
     theme: ThemeData(

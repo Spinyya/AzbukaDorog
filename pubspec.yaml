@@ -33,6 +33,7 @@ dependencies:
   path_provider: ^2.1.5
   image_picker: ^1.1.2
   pytorch_lite: ^4.2.5
+  sqflite: any
   flutter:
     sdk: flutter
 
