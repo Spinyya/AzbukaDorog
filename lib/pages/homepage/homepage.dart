@@ -1,6 +1,8 @@
 import 'package:azbukadorog/design/colors.dart';
+import 'package:azbukadorog/design/images.dart';
 import 'package:azbukadorog/pages/homepage/button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,16 +19,22 @@ class HomePage extends StatelessWidget {
   Widget _text() {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Азбука Дорог', style: TextStyle(
-          color: textColor,
+        title: const Text('АЗБУКА ДОРОГ', style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: textColor,
+            fontSize: 30
+
+
         ),),
         centerTitle: true,
-        backgroundColor: primaryColor,
+        backgroundColor: backgroundColor,
         automaticallyImplyLeading: false,
 
       ),
-      body: Container(color: backgroundColor,),
-      backgroundColor: backgroundColor,
+      body: Container(
+        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fons/Main menu.png'), fit: BoxFit.fill)),
+      ),
+
     );
   }
 }
