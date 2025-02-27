@@ -19,16 +19,20 @@ class HomePage extends StatelessWidget {
   Widget _text() {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Азбука Дорог', style: TextStyle(
-          color: textColor,
+        title: const Text('АЗБУКА ДОРОГ', style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: textColor,
+            fontSize: 30
+
+
         ),),
         centerTitle: true,
-        backgroundColor: primaryColor,
+        backgroundColor: backgroundColor,
         automaticallyImplyLeading: false,
 
       ),
       body: Container(
-        decoration: BoxDecoration(image: DecorationImage( fit: BoxFit.fill0)),
+        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fons/Main menu.png'), fit: BoxFit.fill)),
       ),
 
     );
