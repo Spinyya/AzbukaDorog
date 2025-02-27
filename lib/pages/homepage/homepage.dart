@@ -1,6 +1,8 @@
 import 'package:azbukadorog/design/colors.dart';
+import 'package:azbukadorog/design/images.dart';
 import 'package:azbukadorog/pages/homepage/button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -25,8 +27,10 @@ class HomePage extends StatelessWidget {
         automaticallyImplyLeading: false,
 
       ),
-      body: Container(color: backgroundColor,),
-      backgroundColor: backgroundColor,
+      body: Container(
+        decoration: BoxDecoration(image: DecorationImage( fit: BoxFit.fill0)),
+      ),
+
     );
   }
 }
