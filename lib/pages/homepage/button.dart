@@ -24,6 +24,8 @@ class _buttonState extends State<button> {
 
         child: Text(widget.title,style: const TextStyle(
           color: textColor,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
 
         ),),);
 

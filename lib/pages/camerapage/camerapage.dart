@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:azbukadorog/design/colors.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -51,10 +52,10 @@ class TakePictureScreenState extends State<TakePictureScreen> {
 
   Widget camera_prewiew(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Take a picture')),
+      appBar: AppBar(title: const Text('Сфоткай знак'), backgroundColor: backgroundColor,),
       // You must wait until the controller is initialized before displaying the
       // camera preview. Use a FutureBuilder to display a loading spinner until the
-      // controller has finished initializing.
+      backgroundColor: backgroundColor,
       body: FutureBuilder<void>(
         future: _initializeControllerFuture,
         builder: (context, snapshot) {
@@ -108,8 +109,8 @@ class DisplayPictureScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {    return Scaffold(
-      appBar: AppBar(title: const Text('Display the Picture')),
-      body: Image.file(File(imagePath))
+      appBar: AppBar(title: const Text('Картинка'), backgroundColor: primaryColor,),
+      body: Image.file(File(imagePath), fit: BoxFit.fill,)
 
 
     );
