@@ -8,7 +8,7 @@ class Lessonpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: <Widget>[_listViewBody(), _updateButton(), Align(alignment: Alignment.bottomCenter, child: _navigationbar(context),)] );
+    return Stack(children: <Widget>[ _listViewBody(), _updateButton(), Align(alignment: Alignment.bottomCenter, child: _navigationbar(context),)] );
 
   }
   Widget _updateButton() {
@@ -21,13 +21,11 @@ class Lessonpage extends StatelessWidget {
            BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/second');}, icon: Icon(Icons.task_alt, color: Colors.black,), iconSize: 20), label: ""),
            BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/camx');}, icon: Icon(Icons.camera_alt, color: Colors.black), iconSize: 20), label: "ИИ"),
            BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/book');}, icon: Icon(Icons.book, color: Colors.black,), iconSize: 20), label: "Знаки")
-            
          ],
           backgroundColor: backgroundColor,
         ),
-        body: Container(
-        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fons/fon.png'), fit: BoxFit.fill)),
-      )
+
+
     );
   }
   Widget _buttontask(BuildContext context) {
@@ -40,15 +38,23 @@ class Lessonpage extends StatelessWidget {
     return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 20, left: 30, right: 16), child: IconButton(onPressed: () {Navigator.pushNamed(context, '/book');}, icon: Icon(Icons.book, color: Colors.black,), iconSize: 60),),);
   }
   Widget _listViewBody() {
-    return ListView.separated(
-      itemBuilder: (BuildContext context, int index) {
-        return Center(
+    return ListView(
+      children: <Widget>[
+        Container(
+
+          child: Image.asset('assets/images/fons/fon.png', fit: BoxFit.fill,),
+          
+
+        ),
+        Container(
+
           child: Image.asset('assets/images/fons/fon.png', fit: BoxFit.fill,),
 
-        );
-      },
-      separatorBuilder: (BuildContext context, int index) => const Divider(height: 0, color: Colors.transparent,),
-      itemCount: 5,
+        ),
+        Container(
+          child: Image.asset('assets/images/fons/fon.png', fit: BoxFit.fill,),
+        ),
+      ],
     );
   }
   Widget _navigationbar(BuildContext context) {
@@ -62,4 +68,5 @@ class Lessonpage extends StatelessWidget {
       backgroundColor: primaryColor,
     );
   }
+
 }
