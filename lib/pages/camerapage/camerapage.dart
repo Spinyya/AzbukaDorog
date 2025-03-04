@@ -47,14 +47,12 @@ class TakePictureScreenState extends State<TakePictureScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: <Widget>[camera_prewiew(context), Align(alignment: Alignment.bottomCenter, child: button(context),)]);
+    return Stack(children: <Widget>[camera_prewiew(context), Align(alignment: Alignment.bottomCenter, child: button(context),), Align(alignment: Alignment.bottomCenter, child: bottombar(context),)]);
   }
 
   Widget camera_prewiew(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Сфоткай знак'), backgroundColor: backgroundColor,),
-      // You must wait until the controller is initialized before displaying the
-      // camera preview. Use a FutureBuilder to display a loading spinner until the
+
       backgroundColor: backgroundColor,
       body: FutureBuilder<void>(
         future: _initializeControllerFuture,
@@ -71,9 +69,28 @@ class TakePictureScreenState extends State<TakePictureScreen> {
 
     );
   }
+  Widget bottombar(BuildContext context){
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border(top: BorderSide(color: primaryColor, width: 5.0),),
+      ),
 
+      child: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/second');}, icon: Icon(Icons.task_alt), iconSize: 35,), label: "Уроки"),
+        BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/camx');}, icon: Icon(Icons.camera_alt), iconSize: 35, color: primaryColor,), label: "ИИ"),
+        BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/book');}, icon: Icon(Icons.book), iconSize: 35), label: "Знаки")
+
+      ],
+
+
+
+
+      ),
+    );
+  }
   Widget button(BuildContext context) {
-    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 100), child:IconButton(
+    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 180), child:IconButton(
       onPressed: () async {
         // Take the Picture in a try/catch block. If anything goes wrong,
         // catch the error.
@@ -86,9 +103,9 @@ class TakePictureScreenState extends State<TakePictureScreen> {
 
           if (!mounted) return;
           loadModel(image);
-          await Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) =>
-                DisplayPictureScreen(imagePath: image.path,),),);
+          //await Navigator.of(context).push(MaterialPageRoute(
+            //builder: (context) =>
+            //    DisplayPictureScreen(imagePath: image.path,),),);
         } catch (e) {
           print(e);
         }
@@ -114,7 +131,7 @@ class DisplayPictureScreen extends StatelessWidget{
 
 
     );
-
+  
   }
 }
 

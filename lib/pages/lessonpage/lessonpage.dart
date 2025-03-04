@@ -8,7 +8,7 @@ class Lessonpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: <Widget>[ _listViewBody(), _updateButton(), Align(alignment: Alignment.bottomCenter, child: _navigationbar(context),)] );
+    return Stack(children: <Widget>[ _updateButton(), Align(alignment: Alignment.bottomCenter, child: _navigationbar(context),)] );
 
   }
   Widget _updateButton() {
@@ -16,14 +16,9 @@ class Lessonpage extends StatelessWidget {
   }
   Widget _text(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(items:
-         <BottomNavigationBarItem>[
-           BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/second');}, icon: Icon(Icons.task_alt, color: Colors.black,), iconSize: 20), label: ""),
-           BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/camx');}, icon: Icon(Icons.camera_alt, color: Colors.black), iconSize: 20), label: "ИИ"),
-           BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/book');}, icon: Icon(Icons.book, color: Colors.black,), iconSize: 20), label: "Знаки")
-         ],
-          backgroundColor: backgroundColor,
-        ),
+      body: Container(
+        decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+      ),
 
 
     );
@@ -41,9 +36,7 @@ class Lessonpage extends StatelessWidget {
     return ListView(
       children: <Widget>[
         Container(
-
-          child: Image.asset('assets/images/fons/fon.png', fit: BoxFit.fill,),
-          
+          child: Image.asset('assets/images/fons/fon.png', fit: BoxFit.fill,)
 
         ),
         Container(
@@ -58,15 +51,23 @@ class Lessonpage extends StatelessWidget {
     );
   }
   Widget _navigationbar(BuildContext context) {
-    return BottomNavigationBar(items:
-    <BottomNavigationBarItem>[
-      BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/second');}, icon: Icon(Icons.task_alt, color: Colors.black,), iconSize: 35), label: "Уроки"),
-      BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/camx');}, icon: Icon(Icons.camera_alt, color: Colors.black), iconSize: 35), label: "ИИ"),
-      BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/book');}, icon: Icon(Icons.book, color: Colors.black,), iconSize: 35), label: "Знаки")
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border(top: BorderSide(color: primaryColor, width: 5.0),),
+      ),
 
-    ],
-      backgroundColor: primaryColor,
+      child: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/second');}, icon: Icon(Icons.task_alt), iconSize: 35, color: primaryColor), label: "Уроки"),
+        BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/camx');}, icon: Icon(Icons.camera_alt), iconSize: 35), label: "ИИ"),
+        BottomNavigationBarItem(icon: IconButton(onPressed: () {Navigator.pushNamed(context, '/book');}, icon: Icon(Icons.book), iconSize: 35), label: "Знаки")
+
+      ],
+
+
+
+
+      ),
     );
   }
-
 }
