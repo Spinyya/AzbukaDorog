@@ -17,26 +17,19 @@ class Lessonpage extends StatelessWidget {
   Widget _text(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+        decoration: BoxDecoration(gradient: LinearGradient(colors: <Color>)),
       ),
 
 
     );
   }
-  Widget _buttontask(BuildContext context) {
-    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 20, left: 16, right: 16), child: IconButton(onPressed: () {Navigator.pushNamed(context, '/second');}, icon: Icon(Icons.task_alt, color: Colors.black,), iconSize: 60),),);
-  }
-  Widget _buttoncam(BuildContext context) {
-    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 20, left: 16, right: 30), child: IconButton(onPressed: () {Navigator.pushNamed(context, '/camx');}, icon: Icon(Icons.camera_alt, color: Colors.black), iconSize: 60),),);
-  }
-  Widget _buttonbook(BuildContext context) {
-    return SafeArea(child: Padding(padding: EdgeInsets.only(bottom: 20, left: 30, right: 16), child: IconButton(onPressed: () {Navigator.pushNamed(context, '/book');}, icon: Icon(Icons.book, color: Colors.black,), iconSize: 60),),);
-  }
+
   Widget _listViewBody() {
     return ListView(
       children: <Widget>[
         Container(
-          child: Image.asset('assets/images/fons/fon.png', fit: BoxFit.fill,)
+
+            child: Image.asset('assets/images/fons/fon.png', fit: BoxFit.fill,)
 
         ),
         Container(
