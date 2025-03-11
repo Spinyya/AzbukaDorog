@@ -7,11 +7,11 @@ class DBProvider {
   static final DBProvider db = DBProvider();
   Database? _database;
 
-  Future<Database> get database async{
-    if (_database != null) return _database!;
-    _database = await initDB();
+  //Future<Database> get database async{
+    ///if (_database != null) return _database!;
+    //_database = await initDB();
   }
   initDB() async {
 
   }
-}
+//}

@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: <Widget>[_text(), Align(alignment: Alignment.bottomCenter , child: _updateButton())],);
+    return Stack(children: <Widget>[_text(), Align(alignment: Alignment.center , child: _updateButton())],);
 
   }
 
@@ -22,17 +22,18 @@ class HomePage extends StatelessWidget {
         title: const Text('АЗБУКА ДОРОГ', style: TextStyle(
             fontWeight: FontWeight.bold,
             color: textColor,
-            fontSize: 30
+            fontSize: 30,
 
+        ),
 
-        ),),
+        ),
         centerTitle: true,
-        backgroundColor: backgroundColor,
+        backgroundColor: primaryColor,
         automaticallyImplyLeading: false,
 
       ),
       body: Container(
-        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fons/Main menu.png'), fit: BoxFit.fill)),
+        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fons/Mainmenu.png'), fit: BoxFit.fill)),
       ),
 
     );
