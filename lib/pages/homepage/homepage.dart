@@ -36,6 +36,7 @@ class HomePage extends StatelessWidget {
         decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/fons/Mainmenu.png'), fit: BoxFit.fill)),
       ),
 
+
     );
   }
 }
