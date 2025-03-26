@@ -1,6 +1,6 @@
 # azbukadorog
 
-Azbuka dorog this app for learning pdd on smar5tr
+Azbuka dorog this app for learning pdd on smarter
 
 ## Getting Started
 
