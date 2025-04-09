@@ -32,31 +32,38 @@ class Lessonpage extends StatelessWidget {
       children: <Widget>[
         Container(
           height: 200,
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),
+            child: Padding( padding: EdgeInsets.only(left: 100),
+              child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt,size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),
+            child: Padding( padding: EdgeInsets.only(left: 100),
+              child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),
+            child: Padding( padding: EdgeInsets.only(left: 100),
+              child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),
+          child: Padding( padding: EdgeInsets.only(left: 100),
+          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),
+            child: Padding( padding: EdgeInsets.only(left: 100),
+              child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),
+            child: Padding( padding: EdgeInsets.only(left: 100),
+              child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),
+            child: Padding( padding: EdgeInsets.only(left: 100),
+              child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
       ],
 
