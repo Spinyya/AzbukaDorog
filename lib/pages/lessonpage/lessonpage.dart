@@ -37,32 +37,32 @@ class Lessonpage extends StatelessWidget {
         ),
         Container(
           height: 200,
-            child: Padding( padding: EdgeInsets.only(left: 100),
+            child: Padding( padding: EdgeInsets.only(left: 50),
               child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-            child: Padding( padding: EdgeInsets.only(left: 100),
+            child: Padding( padding: EdgeInsets.only(left: 0),
               child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-          child: Padding( padding: EdgeInsets.only(left: 100),
+          child: Padding( padding: EdgeInsets.only(right: 25),
           child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-            child: Padding( padding: EdgeInsets.only(left: 100),
+            child: Padding( padding: EdgeInsets.only(right: 80),
               child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-            child: Padding( padding: EdgeInsets.only(left: 100),
+            child: Padding( padding: EdgeInsets.only(right: 70),
               child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,
-            child: Padding( padding: EdgeInsets.only(left: 100),
+            child: Padding( padding: EdgeInsets.only(left: 10),
               child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
       ],
