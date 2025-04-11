@@ -1,5 +1,7 @@
+import 'dart:ffi';
 import 'dart:io';
 
+import 'package:azbukadorog/database/database_znaki.dart';
 import 'package:azbukadorog/design/colors.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
@@ -102,10 +104,8 @@ class TakePictureScreenState extends State<TakePictureScreen> {
           final image = await _controller.takePicture();
 
           if (!mounted) return;
-          loadModel(image);
-          //await Navigator.of(context).push(MaterialPageRoute(
-            //builder: (context) =>
-            //    DisplayPictureScreen(imagePath: image.path,),),);
+          var exit = loadModel(image);
+          Navigator.push(context, MaterialPageRoute(builder: (context) => znaki(id: exit)));
         } catch (e) {
           print(e);
         }

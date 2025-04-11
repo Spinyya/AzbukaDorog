@@ -1,0 +1,1 @@
+/home/dev/Документы/GitHub/AzbukaDorog/build/app/intermediates/cxx/RelWithDebInfo/6l6n1k45/obj/x86_64

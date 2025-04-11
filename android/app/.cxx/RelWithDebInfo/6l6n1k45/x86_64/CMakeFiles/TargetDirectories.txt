@@ -1,0 +1,2 @@
+/home/dev/Документы/GitHub/AzbukaDorog/android/app/.cxx/RelWithDebInfo/6l6n1k45/x86_64/CMakeFiles/edit_cache.dir
+/home/dev/Документы/GitHub/AzbukaDorog/android/app/.cxx/RelWithDebInfo/6l6n1k45/x86_64/CMakeFiles/rebuild_cache.dir

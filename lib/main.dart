@@ -1,8 +1,12 @@
+            import 'dart:io';
+
+import 'package:azbukadorog/database/database_znaki.dart';
 import 'package:azbukadorog/pages/camerapage/camerapage.dart';
 import 'package:flutter/material.dart';
 import 'pages/homepage/homepage.dart';
 import 'pages/lessonpage/lessonpage.dart';
 import 'package:camera/camera.dart';
+
 Future<void> main() async {
 
   WidgetsFlutterBinding.ensureInitialized();

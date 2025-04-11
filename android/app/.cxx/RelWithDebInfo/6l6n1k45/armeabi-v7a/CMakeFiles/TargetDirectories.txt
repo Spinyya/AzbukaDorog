@@ -1,0 +1,2 @@
+/home/dev/Документы/GitHub/AzbukaDorog/android/app/.cxx/RelWithDebInfo/6l6n1k45/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/dev/Документы/GitHub/AzbukaDorog/android/app/.cxx/RelWithDebInfo/6l6n1k45/armeabi-v7a/CMakeFiles/rebuild_cache.dir
