@@ -27,13 +27,11 @@ class Lessonpage extends StatelessWidget {
 
   Widget _listViewBody(BuildContext context) {
     return ListView(
-
-
       children: <Widget>[
         Container(
           height: 200,
             child: Padding( padding: EdgeInsets.only(left: 100),
-              child: IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
+              child: IconButton(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => lessons(number: 1)));}, icon: Icon(Icons.camera_alt, size: 40,), enableFeedback: false, splashColor: Colors.transparent, highlightColor: Colors.transparent, ),)
         ),
         Container(
           height: 200,

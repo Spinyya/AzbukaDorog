@@ -1,9 +1,6 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pytorch_lite-4.2.5" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_android-0.10.10+2" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera-0.10.6" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sqflite_android-2.4.1" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+4" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0" />
@@ -24,6 +21,9 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_web-0.3.5" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sqflite-2.4.2" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+2" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera-0.11.1" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pytorch_lite-4.3.2" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_android_camerax-0.6.14+1" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -33,14 +33,14 @@
         <entry key="camera">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/camera-0.10.6/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/camera-0.11.1/lib" />
             </list>
           </value>
         </entry>
-        <entry key="camera_android">
+        <entry key="camera_android_camerax">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/camera_android-0.10.10+2/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/camera_android_camerax-0.6.14+1/lib" />
             </list>
           </value>
         </entry>
@@ -425,7 +425,7 @@
         <entry key="pytorch_lite">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/pytorch_lite-4.2.5/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/pytorch_lite-4.3.2/lib" />
             </list>
           </value>
         </entry>
@@ -597,8 +597,8 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.7.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.12.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.2/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera-0.10.6/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_android-0.10.10+2/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera-0.11.1/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_android_camerax-0.6.14+1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_avfoundation-0.9.18+13/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_platform_interface-2.10.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/camera_web-0.3.5/lib" />
@@ -650,7 +650,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/platform-3.1.6/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/posix-6.0.1/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pytorch_lite-4.2.5/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pytorch_lite-4.3.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_span-1.10.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sqflite-2.4.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sqflite_android-2.4.1/lib" />

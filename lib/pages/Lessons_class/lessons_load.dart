@@ -1,10 +1,20 @@
-import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:path/path.dart';
-import 'dart:convert';
+import 'dart:io';
 
-void main(id) {
-  var lid = json.encode('base.json');
+import 'package:csv/csv.dart';
+import 'package:flutter/material.dart';
+import 'dart:convert';
+read(id) async {
+  final file = File('pages/Lessons_class/material.csv');
+  final contents = await file.readAsString();
+
+  List<List<dynamic>> csvTable = const CsvToListConverter().convert(contents);
+
+  if (csvTable.length > 1) {
+    List<dynamic> secondRow = csvTable[id];
+    print('Вторая строка: $secondRow');
+  } else {
+    print('Файл не содержит достаточное количество строк.');
+  }
 }
 
 
@@ -14,8 +24,11 @@ class lessons extends StatelessWidget {
   const lessons({super.key, required this.number});
   @override
   Widget build(BuildContext context){
+    var pon = read(number);
     return Scaffold(
-
+        appBar: AppBar(
+          title: pon[1],
+        ),
     );
   }
 

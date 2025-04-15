@@ -104,8 +104,7 @@ class TakePictureScreenState extends State<TakePictureScreen> {
           final image = await _controller.takePicture();
 
           if (!mounted) return;
-          var exit = loadModel(image);
-          Navigator.push(context, MaterialPageRoute(builder: (context) => znaki(id: exit)));
+          loadModel(image, context);
         } catch (e) {
           print(e);
         }
@@ -135,11 +134,11 @@ class DisplayPictureScreen extends StatelessWidget{
   }
 }
 
-Future loadModel(image) async {
+Future loadModel(image, context) async {
   String pathImageModel = "assets/best.pt";
   ClassificationModel imageModel = await PytorchLite.loadClassificationModel(
       pathImageModel, 224, 224, 41,
       labelPath: "assets/classesname.txt");
   String imagePrediction = await imageModel.getImagePrediction(await File(image.path).readAsBytes());
-  return imagePrediction;
+  return Navigator.push(context, MaterialPageRoute(builder: (context) => znaki(id: imagePrediction)));
 }

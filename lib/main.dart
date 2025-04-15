@@ -1,5 +1,4 @@
-            import 'dart:io';
-
+import 'dart:io';
 import 'package:azbukadorog/database/database_znaki.dart';
 import 'package:azbukadorog/pages/camerapage/camerapage.dart';
 import 'package:flutter/material.dart';
