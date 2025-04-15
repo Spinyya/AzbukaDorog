@@ -11,7 +11,7 @@ read(id) async {
 
   if (csvTable.length > 1) {
     List<dynamic> secondRow = csvTable[id];
-    print('Вторая строка: $secondRow');
+    return secondRow;
   } else {
     print('Файл не содержит достаточное количество строк.');
   }
