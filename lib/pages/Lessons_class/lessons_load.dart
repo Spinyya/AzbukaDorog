@@ -11,10 +11,12 @@ read(id) async {
 
   if (csvTable.length > 1) {
     List<dynamic> secondRow = csvTable[id];
+    sleep(Duration(seconds: 3));
     return secondRow;
   } else {
     print('Файл не содержит достаточное количество строк.');
   }
+ 
 }
 
 
@@ -29,6 +31,9 @@ class lessons extends StatelessWidget {
         appBar: AppBar(
           title: pon[1],
         ),
+      body: Center(
+        child: Text(pon[2]),
+      ),
     );
   }
 
